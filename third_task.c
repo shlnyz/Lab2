@@ -17,10 +17,13 @@ int main()
         printf("This equation has no real solutions! ");
         return 0;
     }
-    // printf("%f", ds);
-    // printf(" ");
+    else if (ds == 0)
+    {
+        printf("The two roots are in the same place! ");
+    }
     float x1 = (((-1 * b) + sqrt((b * b) - (4 * a * c))) / (2 * a));
     float x2 = (((-1 * b) - sqrt((b * b) - (4 * a * c))) / (2 * a));
+    printf("\n");
     printf("x1 equals to: "
            "%f",
            x1);

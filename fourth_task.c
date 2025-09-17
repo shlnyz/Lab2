@@ -1,26 +1,54 @@
-#include <stdio.h>
-// #include <math.h> Why don't we need this library?
-
+/*1-20 increasing with while loop*/
+/*#include <stdio.h>
 int main()
 {
     // declare  variable, set its value to 1
-
-    // create a while loop that runs while the variable is less than or equal to 20
+    int n = 1;
+    while (n <= 20)
     {
+        printf("%d", n);
+        printf("\n");
+        n = n + 1;
+    }
+    return 0;
+}
+*/
 
-        // increment the variable by 1
+/*implemented for loop and bounds at once*/
+/*#include <stdio.h>
+int main(void)
+{
+    int lower, upper;
+    printf("Enter the lower bound! 1-20 ");
+    scanf("%d", &lower);
+    printf("Enter the upper bound! 1-20 ");
+    scanf("%d", &upper);
+    for (int n = lower; n <= upper; n++)
+    {
+        printf("%d", n);
+        printf("\n");
+    }
+    return 0;
+}
+*/
 
-        // print the value of the variable
+/*same program, but rebuilt for cases of reversed bounds*, UNFINISHED*/
+#include <stdio.h>
+int main(void)
+{
+    int a, b;
+    printf("Enter the first bound!");
+    scanf("%d", a);
+    printf("Enter the second bound!");
+    scanf("%d", b);
+    // int from, to;
+    // if (a < b){
+    //     int from = a;
+    //     int to = b;
+    //     for ()
 
-    } //this is the end of the body of the while loop, it keeps looping back to the while statement, while the condition is true
+    // }
 
-    // you can put breakpoints on the closing curly brace of the while loop to see how it loops back to the while statement and checks the condition again
-    // you can also put breakpoints on the increment statement to see how the variable changes each time through the loop
-    // you can add breakpoint by clicking in the margin to the left of the line numbers!
-
-    // when the code stopped at a line you can evaluate the next line by clicking the "step over" button (or pressing F10)
-    // you can also hover your mouse over variables to see their values
-    // you can stop the debugging session by clicking the red square button or resuming the program (green triangle button) or restarting the debugging session (green circular arrow button)
     return 0;
 }
 
