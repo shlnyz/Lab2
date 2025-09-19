@@ -32,23 +32,25 @@ int main(void)
 }
 */
 
-/*same program, but rebuilt for cases of reversed bounds*, UNFINISHED*/
+/*Improved version, checks for reversed bounds*/
 #include <stdio.h>
 int main(void)
 {
-    int a, b;
-    printf("Enter the first bound!");
-    scanf("%d", a);
-    printf("Enter the second bound!");
-    scanf("%d", b);
-    // int from, to;
-    // if (a < b){
-    //     int from = a;
-    //     int to = b;
-    //     for ()
-
-    // }
-
+    int from, to, i;
+    printf("Please give the first bound! ");
+    scanf("%d", &from);
+    printf("Please give the second bound! ");
+    scanf("%d", &to);
+    if (from < to)
+        for (i = from; i <= to; i++)
+        {
+            printf("%d\n", i);
+        }
+    else if (from > to)
+        for (i = from; i >= to; i--)
+        {
+            printf("%d\n", i);
+        }
     return 0;
 }
 
